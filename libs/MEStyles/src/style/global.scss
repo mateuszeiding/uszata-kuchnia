@@ -1,0 +1,5 @@
+@use '../base/theme' as theme;
+
+body {
+    @include theme.light-theme;
+}

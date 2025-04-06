@@ -1,0 +1,15 @@
+dist/
+tmp/
+node_modules/
+.cache/
+nx-cache/
+coverage/
+
+**/*.ts
+**/*.js
+**/*.json
+**/*.md
+**/*.yml
+**/*.yaml
+**/*.tsx
+**/*.jsx
