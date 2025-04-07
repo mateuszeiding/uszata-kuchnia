@@ -1,0 +1,5 @@
+{
+	"framework": "other",
+	"buildCommand": "pnpm exec nx build frontend",
+	"outputDirectory": "dist/apps/frontend"
+}
