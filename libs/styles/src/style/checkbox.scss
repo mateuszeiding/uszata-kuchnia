@@ -1,0 +1,60 @@
+@use './../functions.scss' as *;
+
+.checkbox {
+    // RESET
+    -webkit-appearance: none;
+    appearance: none;
+
+    // LAYOUT
+    height: size(7);
+    width: size(7);
+    border: size(1) solid paint(primary);
+    position: relative;
+
+    // STYLE
+    border-radius: size(2);
+    cursor: pointer;
+
+    &:hover {
+        border-color: paint(primary, hover);
+    }
+
+    &:active,
+    &:focus {
+        border-color: paint(primary, active);
+    }
+
+    &:focus {
+        outline: size(2) solid paint(primary, outline);
+    }
+
+    &:checked:before {
+        content: '';
+
+        // LAYOUT
+        height: size(4);
+        width: size(4);
+        background-color: paint(primary);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        // STYLE
+        border-radius: size(1);
+
+        &:hover {
+            background-color: paint(primary, hover);
+        }
+
+        &:active,
+        &:focus {
+            background-color: paint(primary, active);
+        }
+    }
+
+    & ~ label {
+        font-size: size(6);
+        cursor: pointer;
+    }
+}

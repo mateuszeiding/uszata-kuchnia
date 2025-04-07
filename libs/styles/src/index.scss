@@ -7,3 +7,9 @@
 // STYLE
 @forward 'style/main.scss';
 @forward 'style/button.scss';
+@forward 'style/checkbox.scss';
+
+// UTILS
+@forward 'utils/display.scss';
+@forward 'utils/flex.scss';
+@forward 'utils/spacers.scss';

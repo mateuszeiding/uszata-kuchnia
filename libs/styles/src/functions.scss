@@ -1,11 +1,11 @@
-@use './base/spacers.scss' as *;
+@use './base/sizes.scss' as *;
 @use './base/colors.scss' as *;
 @use './base/global.scss' as v;
 
 @use 'sass:map';
 
 @function size($key) {
-    @return map.get($spacing, $key);
+    @return map.get($sizes, $key);
 }
 
 @function paint($group, $variant: base) {
