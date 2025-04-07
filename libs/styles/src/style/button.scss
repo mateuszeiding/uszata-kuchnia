@@ -16,6 +16,7 @@
     border-radius: size(2);
     background-color: paint(primary);
     color: paint(primary, text);
+    cursor: pointer;
 
     &:hover {
         background-color: paint(primary, hover);
