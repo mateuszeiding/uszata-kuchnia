@@ -1,2 +1,9 @@
-@forward 'base/!base.scss';
-@forward 'style/!style.scss';
+// BASE
+@forward 'base/global.scss';
+@forward 'base/reset.scss';
+@forward 'base/colors';
+@forward 'base/theme';
+
+// STYLE
+@forward 'style/main.scss';
+@forward 'style/button.scss';

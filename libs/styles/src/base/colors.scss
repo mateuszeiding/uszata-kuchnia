@@ -1,19 +1,66 @@
-// Light
-$color-primary: #9a8cff;
-$color-background: #f8f8ff;
-$color-surface: #efeff5;
-$color-text: #1c1c1e;
-$color-muted: #a0a0a0;
-$color-border: #dddddd;
-$color-success: #4caf50;
-$color-error: #f44336;
+@use 'sass:map';
+@use 'sass:color';
 
-// Dark
-$dark-primary: #bfaaff;
-$dark-background: #121212;
-$dark-surface: #1e1e1e;
-$dark-text: #ffffff;
-$dark-muted: #b0b0b0;
-$dark-border: #2c2c2c;
-$dark-success: #66ff99;
-$dark-error: #ff6666;
+$colors: (
+    primary: (
+        base: #9a8cff,
+        hover: #8573e6,
+        active: #7766cc,
+        disabled: #dad7f7,
+        outline: color.mix(#9a8cff, white, 40%),
+        text: #f9f6ff,
+    ),
+    background: (
+        base: #f8f8ff,
+    ),
+    surface: (
+        base: #efeff5,
+        border: #dddddd,
+    ),
+    text: (
+        base: #1c1c1e,
+        muted: #a0a0a0,
+    ),
+    success: (
+        base: #4caf50,
+        hover: #43a047,
+        text: #ffffff,
+    ),
+    error: (
+        base: #f44336,
+        hover: #e53935,
+        text: #ffffff,
+    ),
+);
+
+$colors-dark: (
+    primary: (
+        base: #bfaaff,
+        hover: #a992e6,
+        active: #9779cc,
+        disabled: #372c4a,
+        outline: color.mix(#bfaaff, black, 50%),
+        text: #ffffff,
+    ),
+    background: (
+        base: #121212,
+    ),
+    surface: (
+        base: #1e1e1e,
+        border: #2c2c2c,
+    ),
+    text: (
+        base: #ffffff,
+        muted: #b0b0b0,
+    ),
+    success: (
+        base: #66ff99,
+        hover: #4cff88,
+        text: #121212,
+    ),
+    error: (
+        base: #ff6666,
+        hover: #ff4c4c,
+        text: #121212,
+    ),
+);

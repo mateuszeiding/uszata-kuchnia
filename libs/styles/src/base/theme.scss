@@ -1,37 +1,15 @@
-@use 'colors' as *;
+@use 'sass:map';
+@use './global.scss' as *;
+@use './../functions.scss' as *;
 
 @mixin light-theme {
-    background-color: $color-background;
-    color: $color-text;
+    $theme: light !global;
+    background-color: paint(background);
+    color: paint(text);
 }
 
 @mixin dark-theme {
-    background-color: $dark-background;
-    color: $dark-text;
-}
-
-$theme-light: (
-    primary: $color-primary,
-    background: $color-background,
-    surface: $color-surface,
-    text: $color-text,
-    muted: $color-muted,
-    border: $color-border,
-    success: $color-success,
-    error: $color-error,
-);
-
-$theme-dark: (
-    primary: $dark-primary,
-    background: $dark-background,
-    surface: $dark-surface,
-    text: $dark-text,
-    muted: $dark-muted,
-    border: $dark-border,
-    success: $dark-success,
-    error: $dark-error,
-);
-
-@function theme-color($key, $mode: light) {
-    @return map-get(if($mode == dark, $theme-dark, $theme-light), $key);
+    $theme: dark !global;
+    background-color: paint(background);
+    color: paint(text);
 }

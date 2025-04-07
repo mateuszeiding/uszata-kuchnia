@@ -1,3 +1,10 @@
+import { Button } from "#ui";
+
 export default function App() {
-	return <>Hello Multiverse!</>;
+	return (
+		<>
+			<h1>Hello Multiverse!</h1>
+			<Button label="text" />
+		</>
+	);
 }

@@ -1,0 +1,31 @@
+@use './../functions.scss' as *;
+
+.btn {
+    // TEXT
+    line-height: 1.25;
+    font-weight: 600;
+    font-size: size(6);
+    text-align: center;
+    text-transform: uppercase;
+
+    // SIZE
+    padding: size(1) size(4);
+    border: 2px solid transparent;
+
+    // STYLE
+    border-radius: size(2);
+    background-color: paint(primary);
+    color: paint(primary, text);
+
+    &:hover {
+        background-color: paint(primary, hover);
+    }
+
+    &:active,
+    &:focus {
+        background-color: paint(primary, active);
+    }
+    &:focus {
+        outline: size(2) solid paint(primary, outline);
+    }
+}

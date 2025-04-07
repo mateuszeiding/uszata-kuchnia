@@ -7,6 +7,9 @@
 		"moduleResolution": "node",
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
+		"allowImportingTsExtensions": true,
+		"esModuleInterop": true,
+		"noEmit": true,
 		"importHelpers": true,
 		"target": "es2015",
 		"module": "esnext",
@@ -16,7 +19,8 @@
 		"baseUrl": ".",
 		"paths": {
 			"#styles": ["libs/styles/src/index.scss"],
-			"#ui": ["libs/ui/src/index.ts"]
+			"#ui": ["libs/ui/src/index.ts"],
+			"#utils": ["libs/utils/src/index.ts"]
 		}
 	},
 	"exclude": ["node_modules", "tmp"]

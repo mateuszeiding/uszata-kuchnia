@@ -50,11 +50,21 @@
                     "watchDepsName": "watch-deps"
                 }
             },
-            "exclude": ["MEStyles/*", "libs/*", "libs/MEStyles/*"]
+            "exclude": [
+                "MEStyles/*",
+                "libs/*",
+                "libs/MEStyles/*",
+                "libs/utils/*"
+            ]
         },
         {
             "plugin": "@nx/js/typescript",
-            "include": ["MEStyles/*", "libs/*", "libs/MEStyles/*"],
+            "include": [
+                "MEStyles/*",
+                "libs/*",
+                "libs/MEStyles/*",
+                "libs/utils/*"
+            ],
             "options": {
                 "typecheck": {
                     "targetName": "typecheck"

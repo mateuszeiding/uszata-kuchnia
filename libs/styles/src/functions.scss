@@ -1,0 +1,24 @@
+@use './base/spacers.scss' as *;
+@use './base/colors.scss' as *;
+@use './base/global.scss' as v;
+
+@use 'sass:map';
+
+@function size($key) {
+    @return map.get($spacing, $key);
+}
+
+@function paint($group, $variant: base) {
+    $theme-map: if(v.$theme == dark, $colors-dark, $colors);
+
+    @if map.has-key($theme-map, $group) {
+        $variants: map.get($theme-map, $group);
+
+        @if map.has-key($variants, $variant) {
+            @return map.get($variants, $variant);
+        }
+    }
+
+    @warn "Color `#{$group}`#{if($variant != base, " variant #{$variant}", "")} not found.";
+    @return null;
+}
