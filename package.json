@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"fn": "nx serve frontend",
+		"fe": "nx serve frontend",
 		"format": "biome format --write ./ && prettier . --write",
 		"lint": "biome lint --write ./",
 		"fix": "pnpm run format && pnpm run lint"
@@ -19,6 +19,8 @@
 		"react-router-dom": "6.29.0"
 	},
 	"devDependencies": {
+		"@babel/core": "^7.14.5",
+		"@babel/preset-react": "^7.14.5",
 		"@biomejs/biome": "^1.9.4",
 		"@nx/devkit": "20.7.1",
 		"@nx/js": "20.7.1",

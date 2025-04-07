@@ -15,7 +15,8 @@
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
-			"#styles": ["libs/styles/src/index.scss"]
+			"#styles": ["libs/styles/src/index.scss"],
+			"#ui": ["libs/ui/src/index.ts"]
 		}
 	},
 	"exclude": ["node_modules", "tmp"]

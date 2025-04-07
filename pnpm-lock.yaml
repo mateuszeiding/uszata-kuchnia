@@ -18,6 +18,12 @@ importers:
         specifier: 6.29.0
         version: 6.29.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     devDependencies:
+      '@babel/core':
+        specifier: ^7.14.5
+        version: 7.26.10
+      '@babel/preset-react':
+        specifier: ^7.14.5
+        version: 7.26.3(@babel/core@7.26.10)
       '@biomejs/biome':
         specifier: ^1.9.4
         version: 1.9.4
