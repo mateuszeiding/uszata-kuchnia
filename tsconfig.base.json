@@ -15,7 +15,7 @@
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
-			"@MES": ["libs/MEStyles/src/index.scss"]
+			"#styles": ["libs/styles/src/index.scss"]
 		}
 	},
 	"exclude": ["node_modules", "tmp"]

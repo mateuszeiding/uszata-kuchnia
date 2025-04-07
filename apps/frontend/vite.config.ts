@@ -18,7 +18,7 @@ export default defineConfig(() => ({
 	},
 	resolve: {
 		alias: {
-			"@MES": path.resolve(__dirname, "../../libs/MEStyles/src/index.scss"),
+			"#styles": path.resolve(__dirname, "../../libs/styles/src/index.scss"),
 		},
 	},
 	plugins: [react(), nxViteTsPaths(), nxCopyAssetsPlugin(["*.md"])],

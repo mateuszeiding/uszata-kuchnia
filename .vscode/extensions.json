@@ -1,7 +1,7 @@
 {
-	"recommendations": [
-		"ms-playwright.playwright",
-		"esbenp.prettier-vscode",
-		"biomejs.biome"
-	]
+    "recommendations": [
+        "ms-playwright.playwright",
+        "esbenp.prettier-vscode",
+        "biomejs.biome"
+    ]
 }

@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Router from "./router/Router";
 import GlobalProvider from "./context/GlobalProvider";
-import "@MES";
+import "#styles";
 
 const container = document.getElementById("root");
 if (!container) {
