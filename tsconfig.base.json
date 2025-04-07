@@ -1,27 +1,25 @@
 {
-	"compileOnSave": false,
-	"compilerOptions": {
-		"rootDir": ".",
-		"sourceMap": true,
-		"declaration": false,
-		"moduleResolution": "node",
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"allowImportingTsExtensions": true,
-		"esModuleInterop": true,
-		"noEmit": true,
-		"importHelpers": true,
-		"target": "es2015",
-		"module": "esnext",
-		"lib": ["es2020", "dom"],
-		"skipLibCheck": true,
-		"skipDefaultLibCheck": true,
-		"baseUrl": ".",
-		"paths": {
-			"#styles": ["libs/styles/src/index.scss"],
-			"#ui": ["libs/ui/src/index.ts"],
-			"#utils": ["libs/utils/src/index.ts"]
-		}
-	},
-	"exclude": ["node_modules", "tmp"]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2020", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "#styles": ["libs/styles/src/index.scss"],
+            "#ui": ["libs/ui/src/index.ts"],
+            "#utils": ["libs/utils/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
 }
