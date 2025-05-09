@@ -7,7 +7,7 @@ type Checkbox = {
 	switch?: boolean;
 } & InputHTMLAttributes<HTMLInputElement>;
 
-export default function ({ ...args }: Readonly<Checkbox>) {
+export default function ({ ...props }: Readonly<Checkbox>) {
 	const id = useId();
 	const ref = useRef<HTMLInputElement>(undefined);
 	return (
@@ -15,13 +15,13 @@ export default function ({ ...args }: Readonly<Checkbox>) {
 			<input
 				id={id}
 				ref={ref}
-				{...{ ...args }}
+				{...{ ...props }}
 				type="checkbox"
-				role={args.switch ? "switch" : "checkbox"}
+				role={props.switch ? "switch" : "checkbox"}
 				aria-checked={ref.current?.checked}
-				className={cls("checkbox", args.crossed && "crossed", args.className)}
+				className={cls("checkbox", props.crossed && "crossed", props.className)}
 			/>
-			<label htmlFor={id}>{args.label}</label>
+			<label htmlFor={id}>{props.label}</label>
 		</div>
 	);
 }

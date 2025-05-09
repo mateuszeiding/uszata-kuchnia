@@ -3,19 +3,26 @@
 @use './base/global.scss' as v;
 
 @use 'sass:map';
+@use 'sass:color';
 
 @function size($key, $scale: 1) {
     @return $scale * map.get($sizes, $key);
 }
 
-@function paint($group, $variant: base) {
+@function paint($group, $variant: base, $light: false) {
     $theme-map: if(v.$theme == dark, $colors-dark, $colors);
 
     @if map.has-key($theme-map, $group) {
         $variants: map.get($theme-map, $group);
 
         @if map.has-key($variants, $variant) {
-            @return map.get($variants, $variant);
+            $val: map.get($variants, $variant);
+
+            @if $light {
+                @return color.mix($val, white, 50%);
+            }
+
+            @return $val;
         }
     }
 

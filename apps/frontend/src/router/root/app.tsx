@@ -1,3 +1,4 @@
+import { Menu } from "#ui";
 import { cls } from "#utils";
 import { Outlet } from "react-router-dom";
 
@@ -22,8 +23,9 @@ export default function App() {
 					<div>Uszata</div>
 					<div>Kuchnia</div>
 				</div>
-				<hr />
-				<nav>MENU</nav>
+				<nav>
+					<Menu />
+				</nav>
 			</aside>
 		</main>
 	);
