@@ -1,0 +1,27 @@
+@use './../functions.scss' as *;
+
+.border {
+    border: 1px solid paint(surface, border);
+}
+
+.border-top {
+    border-top: 1px solid paint(surface, border);
+}
+
+.border-bottom {
+    border-bottom: 1px solid paint(surface, border);
+}
+
+.border-left {
+    border-left: 1px solid paint(surface, border);
+}
+
+.border-right {
+    border-right: 1px solid paint(surface, border);
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid paint(surface, border);
+}

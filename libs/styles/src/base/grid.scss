@@ -4,15 +4,24 @@ $gutter: size(7);
 $columns-quantity: 12;
 
 .grid {
-    padding: size(7) size(7, 2);
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    padding: 0 size(7, 2);
 }
 
 .row {
-    margin: 0 size(7) * -1;
+    margin: 0 size(7) * -0.5;
     display: flex;
     flex-direction: row;
+}
+
+.col {
+    flex: 1 1 0;
 }
 
 @for $i from 1 to 13 {
@@ -20,4 +29,9 @@ $columns-quantity: 12;
         width: calc($i * calc(100% / $columns-quantity));
         padding: 0 calc($gutter / 2);
     }
+}
+
+// Max height for main columns
+.grid > [class*='col-'] {
+    height: 100%;
 }
