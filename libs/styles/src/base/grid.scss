@@ -1,0 +1,23 @@
+@use './../functions.scss' as *;
+
+$gutter: size(7);
+$columns-quantity: 12;
+
+.grid {
+    padding: size(7) size(7, 2);
+    height: 100vh;
+    width: 100vw;
+}
+
+.row {
+    margin: 0 size(7) * -1;
+    display: flex;
+    flex-direction: row;
+}
+
+@for $i from 1 to 13 {
+    .col-#{$i} {
+        width: calc($i * calc(100% / $columns-quantity));
+        padding: calc($gutter / 2);
+    }
+}
