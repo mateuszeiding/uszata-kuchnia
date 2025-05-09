@@ -62,8 +62,8 @@ $neon-border-color: #08f;
             $shadow-white: paint(background);
             $shadow-color: paint(primary, base);
             box-shadow: 0 0 0.1rem $shadow-white, 0 0 0.1rem $shadow-white,
-                0 0 1rem $shadow-color, 0 0 0.7rem $shadow-color,
-                0 0 1.4rem $shadow-color, inset 0 0 0.4rem $shadow-color;
+                0 0 0.5rem $shadow-color, 0 0 0.2rem $shadow-color,
+                0 0 0.8rem $shadow-color, inset 0 0 0.4rem $shadow-color;
         }
     }
 }
