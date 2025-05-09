@@ -1,0 +1,13 @@
+@use '../base/sizes.scss' as *;
+
+@each $key, $value in $sizes {
+    .txt-size-#{$key} {
+        font-size: #{$value};
+    }
+}
+
+@for $i from 1 to 10 {
+    .txt-weight-#{$i} {
+        font-weight: calc($i * 100);
+    }
+}
