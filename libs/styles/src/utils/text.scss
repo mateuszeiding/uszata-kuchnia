@@ -2,7 +2,7 @@
 
 @each $key, $value in $sizes {
     .txt-size-#{$key} {
-        font-size: #{$value};
+        font-size: calc($value * 2);
     }
 }
 
@@ -10,4 +10,20 @@
     .txt-weight-#{$i} {
         font-weight: calc($i * 100);
     }
+}
+
+.txt-lh-none {
+    line-height: 1;
+}
+
+.txt-lh-small {
+    line-height: 1.25;
+}
+
+.txt-lh-medium {
+    line-height: 1.5;
+}
+
+.txt-lh-large {
+    line-height: 1.75;
 }
