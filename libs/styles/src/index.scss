@@ -3,6 +3,7 @@
 @forward 'base/reset.scss';
 @forward 'base/colors';
 @forward 'base/theme';
+@forward 'base/grid.scss';
 
 // STYLE
 @forward 'style/main.scss';
@@ -13,3 +14,4 @@
 @forward 'utils/display.scss';
 @forward 'utils/flex.scss';
 @forward 'utils/spacers.scss';
+@forward 'utils/text.scss';

@@ -4,8 +4,8 @@
 
 @use 'sass:map';
 
-@function size($key) {
-    @return map.get($sizes, $key);
+@function size($key, $scale: 1) {
+    @return $scale * map.get($sizes, $key);
 }
 
 @function paint($group, $variant: base) {
