@@ -18,7 +18,8 @@
         "paths": {
             "#styles": ["libs/styles/src/index.scss"],
             "#ui": ["libs/ui/src/index.ts"],
-            "#utils": ["libs/utils/src/index.ts"]
+            "#utils": ["libs/utils/src/index.ts"],
+            "dto": ["libs/dto/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]

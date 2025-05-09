@@ -54,7 +54,8 @@
                 "MEStyles/*",
                 "libs/*",
                 "libs/MEStyles/*",
-                "libs/utils/*"
+                "libs/utils/*",
+                "libs/dto/*"
             ]
         },
         {
@@ -63,7 +64,8 @@
                 "MEStyles/*",
                 "libs/*",
                 "libs/MEStyles/*",
-                "libs/utils/*"
+                "libs/utils/*",
+                "libs/dto/*"
             ],
             "options": {
                 "typecheck": {
