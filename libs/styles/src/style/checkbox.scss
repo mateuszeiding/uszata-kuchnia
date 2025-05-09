@@ -1,5 +1,30 @@
 @use './../functions.scss' as *;
 
+%CHECKED_SQUARE {
+    content: '';
+
+    // LAYOUT
+    height: size(4);
+    width: size(4);
+    background-color: paint(primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    // STYLE
+    border-radius: size(1);
+
+    &:hover {
+        background-color: paint(primary, hover);
+    }
+
+    &:active,
+    &:focus {
+        background-color: paint(primary, active);
+    }
+}
+
 .checkbox {
     // RESET
     -webkit-appearance: none;
@@ -29,32 +54,39 @@
     }
 
     &:checked:before {
-        content: '';
-
-        // LAYOUT
-        height: size(4);
-        width: size(4);
-        background-color: paint(primary);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        // STYLE
-        border-radius: size(1);
-
-        &:hover {
-            background-color: paint(primary, hover);
-        }
-
-        &:active,
-        &:focus {
-            background-color: paint(primary, active);
-        }
+        @extend %CHECKED_SQUARE;
     }
 
     & ~ label {
         font-size: size(6);
         cursor: pointer;
+        text-transform: capitalize;
+    }
+
+    &.crossed:checked ~ label {
+        text-decoration: line-through;
+        text-decoration-thickness: 0.15rem;
+        color: paint(text, muted);
+    }
+
+    &[role='switch'] {
+        width: size(6, 2);
+
+        &:before {
+            @extend %CHECKED_SQUARE;
+            translate: 0 -50%;
+            left: size(2);
+            transition: left 0.15s ease-in-out;
+        }
+
+        &:checked {
+            background-color: paint(primary);
+
+            &::before {
+                background-color: paint(background);
+                left: size(6);
+                transition: left 0.15s ease-in;
+            }
+        }
     }
 }
