@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import Router from "./router/Router";
 import GlobalProvider from "./context/GlobalProvider";
-import "@fontsource/geist-mono";
+import "@fontsource/geist-mono/latin.css";
 import "#styles";
 
 const container = document.getElementById("root");
