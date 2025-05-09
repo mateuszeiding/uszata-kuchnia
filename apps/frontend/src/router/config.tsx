@@ -5,5 +5,19 @@ export const routerConfig = createBrowserRouter([
 	{
 		path: "/",
 		element: <App />,
+		children: [
+			{
+				index: true,
+				element: <div>Elo</div>,
+			},
+			{
+				path: "recipes",
+				element: <div>Recipes</div>,
+			},
+			{
+				path: "ingredients",
+				element: <div>Ingredients</div>,
+			},
+		],
 	},
 ]);
