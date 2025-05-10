@@ -7,12 +7,8 @@ import {
 } from "react";
 import { LOCALE, LocaleEnum } from "../assets/locale";
 
-type Localization = {
-	[key: string]: string | Localization;
-};
-
 type LocalizationContext = {
-	locale: Localization;
+	locale: (typeof LOCALE)[LocaleEnum];
 	changeLanguage: (key: LocaleEnum) => void;
 	getLanguage: () => LocaleEnum;
 };
