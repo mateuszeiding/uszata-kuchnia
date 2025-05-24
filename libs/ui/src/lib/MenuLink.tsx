@@ -1,20 +1,11 @@
 import { NavLink } from "react-router-dom";
 
-export default function () {
-	return (
-		<>
-			<MenuOption label="Przepisy" route="recipes" />
-			<MenuOption label="Składniki" route="ingredients" />
-		</>
-	);
-}
-
 type MenuOption = {
 	label: string;
 	route: string;
 };
 
-function MenuOption({ ...props }: Readonly<MenuOption>) {
+export default function ({ ...props }: Readonly<MenuOption>) {
 	return (
 		<NavLink
 			className="menu-link"
